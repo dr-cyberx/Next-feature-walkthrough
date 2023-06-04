@@ -1,8 +1,12 @@
+// "use client"
 import React from 'react'
+import axios from 'axios';
 
-const Login = () => {
+const Login = async () => {
+  const {data} = await axios.get('https://jsonplaceholder.typicode.com/posts/1');
+  console.log(data)
   return (
-    <div>Login</div>
+    <div> {JSON.stringify(data)}</div>
   )
 }
 
