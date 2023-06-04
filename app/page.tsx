@@ -4,7 +4,7 @@ const session = null;
 
 export default function Home() {
 
-  if(!session) throw new AuthRequiredError();
+  // if(!session) throw new AuthRequiredError();
 
   return (
     <main >
